@@ -1,0 +1,56 @@
+Requirements:
+-Vagrant
+-Virtual box
+
+The Bash scripts helped to install a slave and master with memory-"1024" and cpus-"2" Ubuntu vagrant machine and runs LAMP STACK.
+
+
+Slave Machine:
+The Slave Machine has an Ubuntu/focal64 image with the host name "Slave-1".
+It uses a private network with a constant Ip address- "192.168.20.10".
+Configuration:
+Upgrade and Update Machine
+-Installation of the ssh pass helped to chip in the password while logging in.
+-Switching the password authenticator on to allow login using password.
+-Restarting the sshd service
+-Installing avahi-daemon libnss-mdns
+
+Master Machine:
+The master machine has an Ubuntu/focal64 image with the host name "Master".
+It uses a private network with a constant Ip address- "192.168.20.25".
+Configuration:
+Upgrade and Update Machine
+-Installation of the ssh pass helped to chip in the password while logging in.
+-Switching the password authenticator on to allow login using password.
+-Restarting the sshd service
+-Installing avahi-daemon libnss-mdns
+
+
+Script Configuration:
+- Created a sudo user named "rinsola"
+- Created ssh key for the user "rinsola"
+- copy the user "rinsola" ssh to the slave machine (only the user "rinsola" should be able to ssh into the slave machine with a password)
+- copy a file named "/mnt" from the user "rinsola" to the slave macLAMP STACK (Master ans Slave Installation)
+  
+  
+  LAMP: (linux, apache, mysql & php):
+    -Installing Apache2 Web server
+    -Installing PHP & Requirements
+    -Installing mySql
+    -Enabling modules
+    -Restarting Apache
+
+-The Lamp stack installed on both master and slave ones the script runs.
+
+-Apache is going to be restarted after installation and configuration.
+
+-Different versions of the php is going to be installed.
+
+
+
+
+
+
+
+
+
